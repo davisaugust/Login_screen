@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
 }
 
 :root{
@@ -16,41 +15,71 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    font-family: 'Signika';
 }
 
+.wrapper{
+    display: flex;
+    box-shadow: 0 0px 32px 0 rgba(0,0,0,0.37);
+}
 .container{
-
-    height: 500px;
+    display: flex;
+    height: 700px;
     width: 500px;
-    padding: 15px;
-    border-radius: .5em;
+    border-radius: 0 .5em .5em 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    box-sizing: border-box;
+}
+.side_container{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0096c7;
+    border-radius: .5em 0em 0 .5em;
+    flex-direction: column;
+}
+.side_container a{
+    position: absolute;
+    margin-top: 40em;
+    color: black;
+}
+#form_title{
+    padding: 15px;
+    color: white;
 }
 #form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    justify-content: space-between;
     box-sizing: border-box;
+    padding: 0 25px;
     width: 100%;
-    padding: 25px;
     outline: none;
 }
 #form label{
     padding: 10px 0;
     font-size: 1.2em;
     font-weight: 700;
-    margin-top: auto;
+    margin-top: 2em;
     text-align: left;
     color: white;
 }
 #form input:not(input[type="submit"]){
     height: 30px;
     border: 1px solid black;
-    border-radius: 5px;
-    padding-left: 5px;
+    padding: 5px 0;
+    font-size: 1.2em;
+    border: none;
+    background-image: transparent;
+    background: none;
+    border-bottom: 2px solid  white;
+    color: white;
 }
 #form input:focus{
     outline: none;
@@ -60,10 +89,10 @@ body{
     justify-content: center;
     align-items: center;
     border: none;
-    margin-top: auto;
     text-align: center;
     cursor: pointer;
     height: 50px;
+    margin-top: 5em;
     border-radius: .5em;
     background-image: var(--primary-color);
     color: white;
@@ -71,9 +100,9 @@ body{
 
 .forgot_pass{
     width: fit-content;
-    margin-top: auto;
     color: white;
     text-decoration: none;
+    margin-top: 10em;
 }
 .forgot_pass:hover{
     color: blue;
