@@ -3,9 +3,6 @@
     margin: 0;
 }
 
-:root{
-    --primary-color: linear-gradient(45deg, #023e8a, #0096c7);
-}
 
 body{
     display: flex;
@@ -43,11 +40,14 @@ body{
     background-color: #0096c7;
     border-radius: .5em 0em 0 .5em;
     flex-direction: column;
+    background-image: linear-gradient(to bottom, #588157 5%, transparent), url(images/forest_bg.png);
+    color: white;
 }
 .side_container a{
     position: absolute;
     margin-top: 40em;
     color: black;
+    color: white
 }
 #form_title{
     padding: 15px;
@@ -56,7 +56,6 @@ body{
 #form{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     box-sizing: border-box;
     padding: 0 25px;
     width: 100%;
@@ -70,39 +69,57 @@ body{
     text-align: left;
     color: white;
 }
-#form input:not(input[type="submit"]){
-    height: 30px;
-    border: 1px solid black;
+.input_container{
+    width: 100%;
     padding: 5px 0;
-    font-size: 1.2em;
-    border: none;
-    background-image: transparent;
-    background: none;
     border-bottom: 2px solid  white;
     color: white;
+}
+.input_container input{
+    height: 30px;
+    border: 1px solid black;
+    font-size: 1.2em;
+    border: none;
+    background: none;
+    color: white;
+    width: 420px;
+    padding-left: 5px;
 }
 #form input:focus{
     outline: none;
 }
-#form input[type="submit"]{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#send_btn {
     border: none;
-    text-align: center;
     cursor: pointer;
     height: 50px;
-    margin-top: 5em;
-    border-radius: .5em;
-    background-image: var(--primary-color);
+    border-radius: .5em;;
     color: white;
+    background-color:#588157;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute; /* Corrigido para "absolute" */
+    width: 450px;
+    bottom: 20px;
+    transition: all .1s ease; /* Ajuste o valor conforme necessário para posicionar na parte inferior */
+}
+
+#send_btn:hover{
+    transition: all .2s ease;
+    transform: scale(1);
+}
+
+#send_btn:active{
+    box-shadow: #000000 0 3px 7px inset;
+    transform: translateY(2px);
 }
 
 .forgot_pass{
     width: fit-content;
+    position: absolute;
+    bottom: 10em;
     color: white;
     text-decoration: none;
-    margin-top: 10em;
 }
 .forgot_pass:hover{
     color: blue;

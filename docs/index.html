@@ -10,11 +10,13 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Oxygen:wght@700&family=Poppins:wght@300;600&family=Roboto:ital,wght@0,300;1,300&family=Signika:wght@600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <div class="wrapper">
         <div class="side_container">
-            <h1>Welcome page</h1>
+            <h1>Welcome!</h1>
             <h2>Please, login to continue.</h2>
             <a href="#">https://davisaugust.github.io/Login_screen_/</a>
         </div>
@@ -22,15 +24,24 @@
             <h1 id="form_title">Login</h1>
                 <form action="#" method="get" id="form">
                     <label for="Email">Email</label>
-                    <input type="email" id="Email" required>
+                    <div class="email_container input_container">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="Email" required>
+                    </div>
                     <label for="Password">Passwords</label>
-                    <input type="password" id="Password">
-                    <input type="submit" value="Enviar" id="sbt_btn">
-                    <a href="#" class="forgot_pass">Esqueceu a senha?</a>
-                    <a href="#" style="width: fit-content;"><img src="images/Instagram_logo_2016.svg" alt="" style="width: 50px;
-                        aspect-ratio: 1;"></a>
+                    <div class="pass_container input_container">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="Password">
+                    </div>
+                    <input type="submit" value="Enviar" id="send_btn">
+                    <a href="#" class="forgot_pass"> Forgot the password?</a>
                 </form>
         </div>
     </div>
+
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
