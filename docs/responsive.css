@@ -1,0 +1,29 @@
+@media screen and (max-width:64em){
+
+    .side_container{
+        display: none;
+    }
+    
+    .container_top_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #588157 5%, transparent), url(images/forest_bg.png);
+        background-position: center;
+        height: 15em;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        color: white;
+        border-radius: .5em .5em 0 0;
+        padding-bottom: 1em;
+    }
+
+    .container_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}

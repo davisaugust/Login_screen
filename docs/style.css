@@ -18,6 +18,7 @@ body{
 .wrapper{
     display: flex;
     box-shadow: 0 0px 32px 0 rgba(0,0,0,0.37);
+    border-radius: .5em;
 }
 .container{
     display: flex;
@@ -30,6 +31,25 @@ body{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
     box-sizing: border-box;
+}
+.image_container{
+    display: flex;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.image_container img{
+    width: 50px;
+    height: 50px;
+    transition: all .1s ease-in-out;
+}
+.image_container img:hover{
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+}
+.container_top_text{
+    display: none;
 }
 .side_container{
     width: 500px;
@@ -49,6 +69,7 @@ body{
     color: black;
     color: white
 }
+
 #form_title{
     padding: 15px;
     color: white;
@@ -69,6 +90,7 @@ body{
     text-align: left;
     color: white;
 }
+
 .input_container{
     width: 100%;
     padding: 5px 0;
@@ -85,9 +107,11 @@ body{
     width: 420px;
     padding-left: 5px;
 }
+
 #form input:focus{
     outline: none;
 }
+
 #send_btn {
     border: none;
     cursor: pointer;
@@ -103,12 +127,10 @@ body{
     bottom: 20px;
     transition: all .1s ease; /* Ajuste o valor conforme necessário para posicionar na parte inferior */
 }
-
 #send_btn:hover{
     transition: all .2s ease;
     transform: scale(1);
 }
-
 #send_btn:active{
     box-shadow: #000000 0 3px 7px inset;
     transform: translateY(2px);
