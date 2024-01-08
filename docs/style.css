@@ -116,33 +116,39 @@ body{
     border: none;
     cursor: pointer;
     height: 50px;
-    border-radius: .5em;;
+    border-radius: .5em;
     color: white;
-    background-color:#588157;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 1px solid white;
     text-transform: uppercase;
     font-weight: 700;
-    position: absolute; /* Corrigido para "absolute" */
+    position: absolute;
     width: 450px;
     bottom: 20px;
-    transition: all .1s ease; /* Ajuste o valor conforme necessário para posicionar na parte inferior */
+    transition: all .1s ease; 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(0px);
 }
-#send_btn:hover{
-    transition: all .2s ease;
-    transform: scale(1);
-}
-#send_btn:active{
-    box-shadow: #000000 0 3px 7px inset;
-    transform: translateY(2px);
-}
-
-.forgot_pass{
-    width: fit-content;
+.bottom_links{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
     position: absolute;
     bottom: 10em;
     color: white;
     text-decoration: none;
 }
-.forgot_pass:hover{
-    color: blue;
+
+.bottom_links a{
+    color: white;
+    text-decoration: none;
+}
+
+.bottom_links a:hover{
+    color: #588157;
+}
+
+.placeholder::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.3);
 }

@@ -1,5 +1,12 @@
-const btn = document.querySelector('#sbt_btn');
+const btn = document.querySelector('#send_btn');
 
-btn.addEventListener('click', function(){
-    console.log('funciona')
-});
+
+function redirectPage(){
+    var email = document.querySelector('.email').value;
+    var pass = document.querySelector('.password').value;
+    if (email !== "" && pass !== ""){
+        window.location.href = "index.html";
+    } else{
+        alert('Por favor, preencha os dois campos corretamente.');
+    }
+}
