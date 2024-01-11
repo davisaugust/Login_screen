@@ -39,13 +39,13 @@
                     <label for="Email">Email</label>
                     <div class="email_container input_container">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" class="email placeholder" required placeholder="Insira seu email">
+                        <input type="email" class="email placeholder" minlength="8" pattern=".{8,}" title="São necessários, no mínimo, 8 carácteres" required placeholder="Insira seu email">
                     </div>
 
                     <label for="Password">Password</label>
                     <div class="pass_container input_container">
                         <i class="fa-solid fa-key"></i>
-                        <input type="password" class="password placeholder" placeholder="Password">
+                        <input type="password" class="password placeholder" minlength="8" placeholder="Password">
                     </div>
 
                     <input type="submit" value="Criar" id="send_btn">

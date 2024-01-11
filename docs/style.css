@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+:root{
+    --primary-color: #588157;
+    --secondary-color: #57cc99;
+}
 
 body{
     display: flex;
@@ -97,6 +101,12 @@ body{
     border-bottom: 2px solid  white;
     color: white;
 }
+.input_container:focus-within{
+    border-bottom-color: var(--secondary-color);
+}
+.input_container:focus-within .fa-solid{
+    color: var(--secondary-color);
+}
 .input_container input{
     height: 30px;
     border: 1px solid black;
@@ -146,7 +156,7 @@ body{
 }
 
 .bottom_links a:hover{
-    color: #588157;
+    color: var(--primary-color);
 }
 
 .placeholder::-webkit-input-placeholder{

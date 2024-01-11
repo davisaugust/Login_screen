@@ -10,3 +10,19 @@ function redirectPage(){
         alert('Por favor, preencha os dois campos corretamente.');
     }
 }
+
+function captureEmailValue() {
+    // Obtenha o valor do campo de entrada com a classe "email"
+    var emailValue = document.querySelector('.email').value;
+
+    // Use a variável conforme necessário
+    console.log(emailValue);
+}
+
+function capturePasswordValue() {
+    // Obtenha o valor do campo de entrada com a classe "email"
+    var passValue = document.querySelector('.password').value;
+
+    // Use a variável conforme necessário
+    console.log(passValue);
+}
