@@ -26,4 +26,7 @@
         align-items: center;
         margin-bottom: 30px;
     }
+    .container_images{
+        display: none;
+    }
 }
